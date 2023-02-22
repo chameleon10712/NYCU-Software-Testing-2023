@@ -1,0 +1,32 @@
+name: Lab01 CI
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.8"]
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install coverage
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Test with unittest 
+      run: |
+        cd Lab01
+        python3 -m unittest StudentsTest.py
+        
+    - name: Test Coverage 
+      run: |
+        cd Lab01
+        coverage run -m unittest StudentsTest.py
+        coverage report
