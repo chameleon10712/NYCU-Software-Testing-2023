@@ -1,7 +1,31 @@
 Lab 1 Spec
 ============
 
-In this Lab, you are going to implement unit test for ``Students.py``. 
+In this Lab, you are going to implement unit test for ``Students``. 
+
+
+Notes
+-------
+
+- Please implement a unit test based on the spec of ``Students`` Class. The given ``Students.py`` is one of the implementation.
+
+  - Spec of the ``Students`` Class
+
+    - ``set_name(name)``: return a non-negative integer as a “unique” id, and store [id, name] pair internally. 
+
+    - ``get_name(id)``: return the corresponding name. 
+
+
+  - Spec of the ``StudentsTest`` Class 
+
+    - Check whether ``set_name()`` returns a “unique” id.
+    - Check whether ``get_name()`` with id returns its corresponding name.
+    - Check wether ``get_name()`` with MEX returns "There is no such user".
+
+
+
+|
+
 
 Part 1 - Unit Test
 ---------------------
