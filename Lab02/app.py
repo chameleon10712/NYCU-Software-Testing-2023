@@ -19,7 +19,7 @@ class Application:
 	mailSystem = MailSystem()
 
 	def __init__(self, people=[], selected=[]):
-		(self.people, self.selected) = self.get_names();
+		(self.people, self.selected) = self.get_names()
 
 	def get_names(self):
 		with open("name_list.txt", "r") as f:
