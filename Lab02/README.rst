@@ -52,8 +52,20 @@ Requirements
 Output
 --------
 
-``python3 -m unittest app_test.py``
 
+.. code::
+
+  python3 -m unittest app_test.py 2>/dev/null
+  python3 -m unittest app_test.py -b -v
+
+or
+
+.. code::
+  
+  python3 -m unittest app_test.py
+
+
+|
 
 .. raw:: html
 
