@@ -23,6 +23,7 @@ Since the app is unfinished and may have several bugs, you need to:
 |
 
 Requirements
+-------------
 
 - In ``setUp()``, stub the name list of the children.
   
@@ -46,6 +47,17 @@ Requirements
   - The real mail system is well structured and complicated, ``app.py`` only write pseudo code to represent it. For MailSystem, you only need to test the logic between the call dependency.
 
 
+|
+
+Output
+--------
+
+``python3 -m unittest app_test.py``
+
+
+.. raw:: html
+
+    <img src="https://i.imgur.com/BivNibw.png" width="600px">
 
 
 
