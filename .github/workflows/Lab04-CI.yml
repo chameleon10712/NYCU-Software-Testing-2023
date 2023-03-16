@@ -1,5 +1,5 @@
 name: Lab04 CI
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+run-name: Lab04 CI is testing out GitHub Actions 🚀
 on: [push]
 jobs:
   Explore-GitHub-Actions:
