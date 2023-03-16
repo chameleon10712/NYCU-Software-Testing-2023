@@ -20,7 +20,7 @@ jobs:
           cd Lab04
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - name: Test with unittest
+      - name: Run selenium code
         run: |
           cd Lab04
           python3 app.py
