@@ -17,6 +17,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
         run: |
+          sudo apt-get update
           sudo apt-get install -y clang-15 llvm-15
       - name: Build LLVM Pass, build target, run target
         run: |
