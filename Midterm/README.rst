@@ -160,6 +160,12 @@ Required Output
 
 .. raw:: html
 
+    <img src="https://i.imgur.com/vtYER9C.png" width="800px">
+
+|
+
+.. raw:: html
+
     <img src="https://i.imgur.com/Xq7gXjw.png" width="800px">
 
 |
