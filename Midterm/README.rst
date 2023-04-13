@@ -139,6 +139,8 @@ To verify Q1 and Q2, please write a GitHub Action configuration file named ``Mid
    # Q1
    $ python3 course_scheduling_system_test.py  -v 1>log.txt
    $ cat log.txt
+   $ coverage run course_scheduling_system_test.py
+   $ coverage report
    
    # Q2
    $ python3 app.py
