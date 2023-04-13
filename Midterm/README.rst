@@ -147,7 +147,7 @@ To verify Q1 and Q2, please write a GitHub Action configuration file named ``Mid
 
 
 
-Example Output
+Required Output
 ----------------
 
 .. raw:: html
