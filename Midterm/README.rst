@@ -83,7 +83,7 @@ q1_6 (15%)
 
 Add some more (possibly 0) tests to achieve 100% coverage of
 ``course_scheduling_system.py``. You can mock ``check_course_exist`` and
-use pragma to excluding ``check_course_exist`` from coverage analysis.
+use pragma to excluding ``check_course_exist`` from coverage analysis. (If you need more than one test method, please name it as test_q1_6_1, test_q1_6_2, ...)
 
 
 |
