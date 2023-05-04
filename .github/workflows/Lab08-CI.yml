@@ -1,0 +1,33 @@
+name: Lab08 CI
+run-name: Lab08 CI is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-22.04
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10"]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          pip install angr
+          pip install angr-utils
+          pip install bingraphvis
+          sudo apt update
+          sudo apt install -y graphviz
+      - name: Run example (just for demo)
+        run: |
+          cd Lab08/example
+          bash -c "time python3 solve.py"
+      - name: Verify result
+        run: |
+          cd Lab08/lab
+          bash -c "time python3 solve.py"
+          python3 verify.py
